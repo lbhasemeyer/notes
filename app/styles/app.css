@@ -9,17 +9,6 @@ html, body {
   background: #222222;
 }
 
-.add {
-  display: block;
-  float: right;
-  width: 49%;
-  min-height: 100px;
-  padding: 20px;
-  background: #2b2b2b;
-  color: white;
-  margin-bottom: 20px;
-}
-
 textarea {
   display: block;
   float: left;
@@ -35,6 +24,17 @@ textarea:focus {
   border: 2px solid red;
 }
 
+.add {
+  display: block;
+  float: right;
+  width: 49%;
+  min-height: 100px;
+  padding: 20px;
+  background: #2b2b2b;
+  color: white;
+  margin-bottom: 20px;
+}
+
 button {
   padding: 5px;
   float: right;
@@ -48,8 +48,11 @@ button:focus {
   border: 2px solid red;
 }
 
+hr {
+  width: 100%;
+}
+
 .view {
-  overflow: hidden;
   display: block;
   float: left;
   padding: 20px;
@@ -62,8 +65,4 @@ button:focus {
 
 .view:nth-of-type(even) {
   margin-left: 19px;
-}
-
-hr {
-  width: 100%;
 }

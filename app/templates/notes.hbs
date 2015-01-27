@@ -1,14 +1,13 @@
 {{outlet}}
 
-<div class="note-field">
+<section class="note-field">
   {{textarea placeholder="Add a note" property="stuff" value=noteCopy}}
-</div>
+</section>
 
-<div class="showdown">
-  <section class="add">
-    <button {{action 'newNote'}}>Add Note</button>
-  </section>
-</div>
+<section class="add">
+  {{noteCopy}}
+  <button {{action 'newNote'}}>Add Note</button>
+</section>
 
 <hr>
 
