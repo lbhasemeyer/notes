@@ -1,10 +1,14 @@
 {{outlet}}
 
+{{message-queue}}
+
 <section class="note-field">
-  {{textarea placeholder="Add a note" property="stuff" value=noteCopy}}
+  {{textarea placeholder="Add a title" class="title-field" value=titleCopy}}
+  {{textarea placeholder="Add a note" value=noteCopy}}
 </section>
 
 <section class="add">
+  <h2>{{titleCopy}}</h2>
   {{noteCopy}}
   <button {{action 'newNote'}}>Add Note</button>
 </section>
@@ -13,6 +17,7 @@
 
 {{#each note in model}}
   <article class="view">
+    <h2>{{note.title}}</h2>
     {{note.body}}
     <button {{action 'deleteNote' note.id}}>Delete Note</button>
   </article>
