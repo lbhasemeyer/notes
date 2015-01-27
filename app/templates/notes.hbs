@@ -1,0 +1,20 @@
+{{outlet}}
+
+<div class="note-field">
+  {{textarea placeholder="Add a note" property="stuff" value=noteCopy}}
+</div>
+
+<div class="showdown">
+  <section class="add">
+    <button {{action 'newNote'}}>Add Note</button>
+  </section>
+</div>
+
+<hr>
+
+{{#each note in model}}
+  <article class="view">
+    {{note.body}}
+    <button {{action 'deleteNote' note.id}}>Delete Note</button>
+  </article>
+{{/each}}
